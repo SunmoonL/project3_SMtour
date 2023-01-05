@@ -1,1 +1,20 @@
 @charset "utf=8";
+/* 스플래쉬 */
+#splash{width: 1900px; height: 950px;}
+#fly{position: relative; transition: all 3s; display: inline-block;
+z-index: 999;}
+#fly:hover{cursor: pointer;}
+.fa-plane{font-size: 100px; color: dodgerblue;}
+.fa-cloud{position: absolute;}
+#cloud1{top:200px; left:200px; font-size: 100px; color: rgb(79, 190, 255);}
+#cloud2{top:100px; left:100px; font-size: 80px; color: rgb(74, 116, 255);}
+#cloud3{top:200px; left:600px; font-size: 150px; color: rgb(162, 255, 255);}
+#cloud4{top:400px; left:300px; font-size: 200px; color: rgb(228, 255, 255);}
+#cloud5{top:200px; left:1200px; font-size: 300px; color: rgb(76, 198, 255);}
+#cloud6{top:150px; left:500px; font-size: 280px; color: rgb(96, 223, 255);}
+#cloud7{top:550px; left:50px; font-size: 230px; color: rgb(165, 196, 255);}
+#cloud8{top:700px; left:800px; font-size: 130px; color: rgb(149, 255, 255);}
+#cloud9{top:150px; left:1100px; font-size: 130px; color: rgb(72, 180, 230);}
+#cloud10{top:750px; left:1500px; font-size: 200px; color: rgb(0, 140, 255);}
+#cloud11{top:150px; left:1700px; font-size: 130px; color: rgb(83, 255, 255);}
+
