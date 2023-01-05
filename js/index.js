@@ -21,10 +21,12 @@ setInterval(function() {
 });
 //비행기 클릭시 구름 애니메이션
 $(function(){
+  $("#wrap").hide();
 $("#fly").on("click",function(){
     $("#fly").hide();
     $(".fa-cloud").animate({left:"-1000px"},2000,function(){
         $("#splash").hide();
+        $("#wrap").fadeIn();
     });
 });
 });
