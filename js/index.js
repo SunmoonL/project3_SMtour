@@ -19,6 +19,7 @@ setInterval(function() {
   fly.style.backgroundPosition = (x % 100) + "px";
 }, 2000);
 });
+
 //비행기 클릭시 구름 애니메이션
 // $(function(){
 //   $("#wrap").hide();
@@ -30,6 +31,8 @@ setInterval(function() {
 //     });
 // });
 // });
+
+// 네비 리스트
 $(function () {
   $("nav > ul > li").mouseenter(function () {
     $(this).children(".menu").stop().slideDown();
@@ -44,4 +47,14 @@ $(function () {
   }).mouseleave(function () {
     $(".submenu").stop().slideUp();
   });
+});
+
+// 햄버거 메뉴
+$(function () {
+const icons = document.querySelectorAll('.icon');
+icons.forEach (icon => {  
+  icon.addEventListener('click', (event) => {
+    icon.classList.toggle("open");
+  });
+});
 });

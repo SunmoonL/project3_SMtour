@@ -18,3 +18,13 @@ z-index: 999;}
 #cloud10{top:750px; left:1500px; font-size: 200px; color: rgb(0, 140, 255);}
 #cloud11{top:150px; left:1700px; font-size: 130px; color: rgb(83, 255, 255);}
 
+#wrap{width: 1900px;}
+#slider{width: 100%; height: 900px; position: relative;}
+#slider > img{width: 100%; height: 100%;}
+#slider > div{position: absolute;}
+#america{width: 260px; height: 90px; background-color: dodgerblue; top: 47%; left:14%}
+#southAmerica{width: 200px; height: 250px; background-color: yellow; top: 67%; left:26%}
+#europe{width: 260px; height: 90px; background-color: purple; top: 43%; left:43%}
+#iceland{width: 50px; height: 50px; background-color:aqua; top: 32%; left:41%}
+#eastAsia{width: 160px; height: 100px; background-color:darkorange; top: 60%; left:73%}
+#russia{width: 800px; height: 150px; background-color: red; top: 27%; left:55%}
