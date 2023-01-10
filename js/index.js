@@ -16,7 +16,7 @@ setInterval(function() {
   fly.style.top = newTop + "px";
   fly.style.transform = "rotate(" + newRotation + "deg)";
 
-  fly.style.backgroundPosition = (x % 100) + "px";
+  // fly.style.backgroundPosition = (x % 100) + "px";
 }, 2000);
 });
 
@@ -37,7 +37,7 @@ $(function () {
   $("nav > ul > li").mouseenter(function () {
     $(this).children(".menu").stop().slideDown();
   }).mouseleave(function () {
-    $(".menu").stop().slideUp();
+    $(".menu").stop().fadeOut();
   });
 });
 
@@ -45,7 +45,7 @@ $(function () {
   $(".menu > li").mouseenter(function () {
     $(this).children(".submenu").stop().slideDown();
   }).mouseleave(function () {
-    $(".submenu").stop().slideUp();
+    $(".submenu").stop().fadeOut();
   });
 });
 
@@ -56,5 +56,25 @@ icons.forEach (icon => {
   icon.addEventListener('click', (event) => {
     icon.classList.toggle("open");
   });
+});
+});
+
+$(function(){
+  $("#slider > div").mouseenter(function(){
+    $(this).children().stop().fadeIn();
+  });
+
+  $("#slider > div").mouseleave(function(){
+    $(this).children().stop().fadeOut();
+  });
+});
+
+$(function(){
+$("#slider > div").mousemove(function(event) {
+  var x = event.pageX;
+  var y = event.pageY;
+  $("#vid").css({left: x +10 , top: y - 450}).addClass("on");
+}).mouseleave(function() {
+  $("#vid").removeClass("on");
 });
 });

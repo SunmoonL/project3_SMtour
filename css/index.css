@@ -19,12 +19,41 @@ z-index: 999;}
 #cloud11{top:150px; left:1700px; font-size: 130px; color: rgb(83, 255, 255);}
 
 #wrap{width: 1900px;}
+
 #slider{width: 100%; height: 900px; position: relative;}
+
 #slider > img{width: 100%; height: 100%;}
 #slider > div{position: absolute;}
-#america{width: 260px; height: 90px; background-color: dodgerblue; top: 47%; left:14%}
-#southAmerica{width: 200px; height: 250px; background-color: yellow; top: 67%; left:26%}
-#europe{width: 260px; height: 90px; background-color: purple; top: 43%; left:43%}
-#iceland{width: 50px; height: 50px; background-color:aqua; top: 32%; left:41%}
-#eastAsia{width: 160px; height: 100px; background-color:darkorange; top: 60%; left:73%}
-#russia{width: 800px; height: 150px; background-color: red; top: 27%; left:55%}
+#slider > div > img {display: none;}
+
+#america{width: 15.8%; height: 90px;  top: 46.6%; left:13.7%;}
+#america > img{width:96%; height: 107px;}
+
+#southAmerica{width: 13.1%; height: 250px; top: 63.4%; left:24.8%;}
+#southAmerica > img{width: 100%; height: 280px;}
+
+#europe{width: 13.7%; height: 240px;top: 27.2%; left:44%; z-index: 1;}
+#europe > img{width: 100%; height: 250px;}
+
+#iceland{width: 2.63%; height: 50px; top: 33.4%; left:40.8%}
+#iceland > img {width: 100%; height: 28px;}
+
+#eastAsia{width: 12.63%; height: 150px; top: 57%; left:71.5%}
+#eastAsia > img {width: 103%; height: 148px;}
+
+#russia{width: 42.1%; height: 400px; top: 8.7%; left:53.2%}
+#russia > img {width: 105%; height: 380px;}
+
+#vid{
+    width: 640px;
+    height: 360px;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;                
+}
+#vid.on{            
+    opacity: 0.8;            
+}
