@@ -1,7 +1,7 @@
 @charset "utf=8";
-header{width: 100%; height: 80px;}
-header .small{width: 100%; height: 80px; position: absolute; left: 0; top: 0; z-index: 3; 
-display: flex; align-items: center; justify-content:space-between; background-color: aquamarine;}
+header{width: 1600px; height: 80px;}
+header .small{width: 1600px; height: 80px; position: absolute; left: 0; right: 0; top: 0; z-index: 3; 
+display: flex; align-items: center; justify-content:space-around; margin: 0 auto;}
 #logo{width:10%; min-width: 160px; padding-left: 20px;}
 #logo > a > img{width: 160px; height: 80px;}
 nav{width: 50%; height: 80px; position: relative; background-color: #fff;}
@@ -10,7 +10,7 @@ nav > ul > li{width: 25%; float: left; line-height: 80px; text-align: center;
 font-size: 1.6rem;}
 nav > ul > li:hover{background-color: dodgerblue;}
 .icon{
-    margin:20px;
+    margin:20px; z-index: 100;
   }
 .nav-icon-5{
     width: 30px;
@@ -21,7 +21,7 @@ nav > ul > li:hover{background-color: dodgerblue;}
     display: inline-block;
   }
   .nav-icon-5 span{
-    background-color:#fff;
+    background-color:#111;
     position: absolute;
     border-radius: 2px;
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);

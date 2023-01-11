@@ -18,13 +18,14 @@ z-index: 999;}
 #cloud10{top:750px; left:1500px; font-size: 200px; color: rgb(0, 140, 255);}
 #cloud11{top:150px; left:1700px; font-size: 130px; color: rgb(83, 255, 255);}
 
-#wrap{width: 1900px;}
+#wrap{width: 1600px; margin: 0 auto;}
+/* 맵 */
+#map{width: 100%; height: 900px; position: relative;}
+#map:hover{cursor: url("../img/cursor.cur"),auto;}
 
-#slider{width: 100%; height: 900px; position: relative;}
-
-#slider > img{width: 100%; height: 100%;}
-#slider > div{position: absolute;}
-#slider > div > img {display: none;}
+#map > img{width: 100%; height: 100%;}
+#map > div{position: absolute;}
+#map > div > img {display: none;}
 
 #america{width: 15.8%; height: 90px;  top: 46.6%; left:13.7%;}
 #america > img{width:96%; height: 107px;}
@@ -44,16 +45,19 @@ z-index: 999;}
 #russia{width: 42.1%; height: 400px; top: 8.7%; left:53.2%}
 #russia > img {width: 105%; height: 380px;}
 
-#vid{
-    width: 640px;
-    height: 360px;
-    border-radius: 20px;
-    background: #333;
-    color: #fff;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s ease;                
-}
-#vid.on{            
-    opacity: 0.8;            
-}
+#vid{width: 640px; height: 360px; border-radius: 20px; background: #333; color: #fff;
+position: absolute; display: none; transition: opacity 0.3s ease; z-index: 3;}
+#vid.on{display: block;}
+
+/* 항공 예약 슬라이드 */
+#flight{width: 1600px; height: 600px; display: flex; margin: 0 auto; background-color: gold;}
+#select{width: 33.33%;}
+#select > ul{width: 100%; height: 100px; background-color: #ddd;}
+#select > ul > li {text-align: center; float: left; width: 33.3%; line-height: 100px; font-size: 2rem;
+cursor: pointer;}
+.inputlist{float: left; width: 100%; height: 500px; background-color: azure; border-top:2px solid dodgerblue;
+border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; border-right: 1px solid #ddd;
+padding: 10px 0;}
+.portback{background-color: dodgerblue; color: #fff;}
+.input{font-size: 1.6rem;}
+.input:not(:nth-of-type(1)){display: none;}
